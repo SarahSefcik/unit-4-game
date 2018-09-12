@@ -1,0 +1,61 @@
+body {
+  background-color: #EA4684;
+}
+
+div {
+  margin: 0px;
+}
+
+h1, h2, h3, h5, p, .goal, .score-number {
+  color: white;
+}
+
+h1, h2, h3, h5 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.orange {
+  border-top: 10px solid #FEC948;
+}
+
+.teal {
+  border-top: 10px solid #6CCBDE;
+}
+
+.my-4 {
+  margin-top: 0rem!important;
+  margin-bottom: 0rem!important;
+}
+
+.my-5 {
+  margin-top: 0rem!important;
+  margin-bottom: 0rem!important;
+}
+
+.jumbotron {
+  background-color: #5B409E;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.jumbotron-fluid {
+  margin-bottom: 0;
+}
+
+.container {
+  margin-top: 25px;
+}
+
+.logo {
+  width: 100%;
+  padding: 0%;
+}
+
+.spilt_cereal {
+  width: 100%;
+}
