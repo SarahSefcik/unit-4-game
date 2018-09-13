@@ -3,12 +3,24 @@ var goal = "";
 var wins = 0;
 var losses = 0;
 var counter = 0;
-var images = ["https://via.placeholder.com/50x50", "https://via.placeholder.com/50x50", "https://via.placeholder.com/50x50", "https://via.placeholder.com/50x50"];
+var images = ["assets/images/clover.png", "assets/images/heart.png", "assets/images/moon.png", "assets/images/star.png"];
+var funFacts = ["Lucky Charms were made originally by mixing Cherios with circus peanuts marshmallow candy.", "There were only four original marshmallow shapes: pink heart, orange star, yellow moon, and green clover.", "Limited edition marshmallows became additions in 1975.", "The first limited edition marshmallow was a blue diamond.", 'The horseshoe marshmallow represents the "power of speed."', 'The red balloon marshmallow represents the "power to float."', "When the green tree marshmallow was introduced in 1991, kids could receive their own tree to plant by showing two proofs of purchase.", 'The rainbow marshmallow represents the "power to travel from place to place."', "The blue diamond and yellow moon marshmallows morphed into one blue moon.", "The pot of gold marshmallow was replaced by the hour glass marshmallow.", "A factory mishap caused swirls in the coloring of the marshmallows. The outcome was so memorable, it resurfaced and the second time on purpose.", "Lucky charms has decided to introduce a 2018 unicorn marshmallow into the mix."]
+var arrayLength = funFacts.length
 
 // Function to generate random number between 19-120
 function randomTargetNumber() {
   goal = Math.floor(Math.random() * 101) + 19;
 }
+
+// Function to generate a random value of funFacts for an alert
+function alertGenerator() {
+
+  // For loop to generate new array values
+  for (var a = 0; a < arrayLength; i++) {
+    alert("Did you know: " + a);
+  }
+}
+
 
 // Reset Function for values of marshmallow images array. Values between 1-12.
 function resetMarshmallows() {
@@ -59,11 +71,13 @@ function marshmallowClick() {
   if (counter == goal) {
     wins++;
     Reset();
+    alertGenerator();
   }
   // greater than goal, loss and reset
   else if (counter > goal) {
     losses++;
     Reset();
+    alertGenerator();
   };
 };
 
