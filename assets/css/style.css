@@ -58,4 +58,10 @@ p {
 
 .spilt_cereal {
   width: 100%;
+  align: right;
+}
+
+.marshmallow_Images {
+  margin-top: 2%;
+  margin-bottom: 10%;
 }
